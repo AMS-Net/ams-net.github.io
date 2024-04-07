@@ -1,9 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hello, World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS-Net</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">AMS-Net</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Downloads</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <h1>AMS-Net: Netlist Dataset for Analog/Mixed-Signal Circuits</h1>
+    <p>AMS-Net is a dataset containing schematic diagrams and their corresponding netlists in SPICE format.</p>
+    <h3>Example</h3>
+    <div class="row">
+        <div class="col-6">
+            <img src="assets/img/0.jpg" width="100%" />
+        </div>
+        <div class="col-6">
+            <br> *SPICE Netlist for circuit 0
+            <br> M1 7 2 6 6 NMOS W=1u L=1u
+            <br> M2 8 1 6 6 NMOS W=1u L=1u
+            <br> I1 6 0 DC 1mA
+            <br> M4 7 7 VDD VDD NMOS W=1u L=1u
+            <br> M3 8 7 VDD VDD PMOS W=1u L=1u
+            <br> C1 0 8 1nF
+            <br> .MODEL NMOS NMOS (LEVEL=1 VTO=1 KP=1.0e-4 LAMBDA=0.02)
+            <br> .MODEL PMOS PMOS (LEVEL=1 VTO=1 KP=1.0e-4 LAMBDA=0.02)
+            <br> .OP
+            <br> .END
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
