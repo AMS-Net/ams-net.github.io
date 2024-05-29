@@ -22,9 +22,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/AMS-Net/ams.net.github.io">Downloads</a>
-                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="https://github.com/AMS-Net/ams.net.github.io">Downloads</a>-->
+<!--                </li>-->
             </ul>
         </div>
     </div>
@@ -33,6 +33,12 @@
 <div class="container mt-4">
     <h1>AMS-Net: Netlist Dataset for Analog/Mixed-Signal Circuits</h1>
     <p>AMS-Net is a dataset containing schematic diagrams and their corresponding netlists in SPICE format.</p>
+    <p>Download is available at:</p>
+    <ul>
+        <li>GitHub project: <a href="https://github.com/AMS-Net/ams.net.github.io">https://github.com/AMS-Net/ams.net.github.io</a></li>
+        <li>Google Drive: <a href="https://drive.google.com/drive/folders/1Z9_lqXecMypJExzS03SCT8Ss8MAwATnV?usp=sharing">https://drive.google.com/drive/folders/1Z9_lqXecMypJExzS03SCT8Ss8MAwATnV?usp=sharing</a></li>
+        <li>Baidu Drive: <a href="https://pan.baidu.com/s/1rq7UUGRp6BH8AIO8aWpLiA">https://pan.baidu.com/s/1rq7UUGRp6BH8AIO8aWpLiA</a> (password: iy1h)</li>
+    </ul>
     <h3>Example</h3>
     <div class="row">
         <div class="col-6">
@@ -43,7 +49,7 @@
             <br> M1 7 2 6 6 NMOS W=1u L=1u
             <br> M2 8 1 6 6 NMOS W=1u L=1u
             <br> I1 6 0 DC 1mA
-            <br> M4 7 7 VDD VDD NMOS W=1u L=1u
+            <br> M4 7 7 VDD VDD PMOS W=1u L=1u
             <br> M3 8 7 VDD VDD PMOS W=1u L=1u
             <br> C1 0 8 1nF
             <br> .MODEL NMOS NMOS (LEVEL=1 VTO=1 KP=1.0e-4 LAMBDA=0.02)
